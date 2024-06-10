@@ -1,17 +1,23 @@
 import React from "react";
-import {NavLink } from "react-router-dom";
-import "../index.css"
+import { NavLink } from "react-router-dom";
+import "../index.css";
   
 const Navbar = () => {
   return (
     <nav className="navContainer">
-   <NavLink to="/" className={(e)=> {return e.isActive?'Blue':''}}> <li>Home</li> </NavLink>
-   <NavLink to="/xpensr" className={(e)=> {return e.isActive?'Blue':''}}> <li></li>Xpensr </NavLink>
-   <NavLink to="/summary" className={(e)=> {return e.isActive?'Blue':''}}> <li></li>Summary</NavLink>
-     </nav>
-   );
+      <ul>
+        <li>
+          <NavLink to="/" className={({ isActive }) => isActive ? 'Blue' : ''}>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/xpensr" className={({ isActive }) => isActive ? 'Blue' : ''}>Xpensr</NavLink>
+        </li>
+        <li>
+          <NavLink to="/summary" className={({ isActive }) => isActive ? 'Blue' : ''}>Summary</NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Navbar;
-
- 
