@@ -7,13 +7,13 @@ const Navbar = () => {
     <nav className="navContainer">
       <ul>
         <li>
-          <NavLink to="/" className={({ isActive }) => isActive ? 'Blue' : ''}>Home</NavLink>
+          <NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/xpensr" className={({ isActive }) => isActive ? 'Blue' : ''}>Xpensr</NavLink>
+          <NavLink to="/xpensr" className={({ isActive }) => isActive ? 'active-link' : ''}>Xpensr</NavLink>
         </li>
         <li>
-          <NavLink to="/summary" className={({ isActive }) => isActive ? 'Blue' : ''}>Summary</NavLink>
+          <NavLink to="/summary" className={({ isActive }) => isActive ? 'active-link' : ''}>Summary</NavLink>
         </li>
       </ul>
     </nav>
